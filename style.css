@@ -76,6 +76,7 @@ body, html {
     position: absolute;
     top: 1.5rem;
     right: 2rem;
+    z-index: 5;
 }
 #scoreText {
     background: rgba(0, 0, 0, 0.4);
@@ -86,7 +87,6 @@ body, html {
     letter-spacing: 2px;
     box-shadow: 0 0 10px rgba(0, 255, 128, 0.5);
     border: 1px solid #00ff7f;
-    z-index: 2;
 }
 
 #highScoreText {
@@ -94,42 +94,37 @@ body, html {
     color: gold;
     font-size: 1rem;
     letter-spacing: 1px;
-    z-index: 2;
 }
 #title{
     position: absolute;
     top: 1.5rem;
     left: 1rem;
     background: rgba(0, 0, 0, 0.4);
-    padding: 0.8rem 1.2rem;
+    padding: 0.5rem 1.2rem;
     color: #00ff7f;
     font-size: 1.8rem;
     letter-spacing: 2px;
     z-index: 3;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1180px) {
     #score {
         position: static;
         display: block;
         text-align: center;
-        margin: 0.5rem auto;
+        margin-bottom: 0.5rem;
         font-size: 1.2rem;
+        z-index: 3;
     }
     #title{
         /* display: none; */
         position: static;
         text-align: center;
+        
     }
 
     .container {
         flex-direction: column;
-        padding-top: 1rem;
+        padding-bottom: 1.5rem;
     }
-}
-
-@media (min-width: 768px) {
-  #controls {
-    display: none;
-  }
 }
